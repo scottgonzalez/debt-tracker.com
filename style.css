@@ -3,13 +3,13 @@ body {
 	background-color: #444;
 	color: #eee;
 	font-family: Verdana, "BitStream vera Sans", Helvetica, sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	margin: 0;
 	padding: 0;
 }
 
 p {
-	margin: 1em 0;
+	margin: 0 0 1em 0;
 	line-height: 1.4em;
 }
 
@@ -28,19 +28,19 @@ h1 {
 }
 
 .main {
-	border-radius: 20px;
-	background-image: linear-gradient(to bottom, #eee, #aaa);
+	box-sizing: border-box;
+	border-radius: 10px;
 	background-color: #ccc;
 	color: #333;
-	margin: 2em;
-	padding: 1em 2em;
+	margin: 1em 0.5em;
+	padding: 0.5em;
 }
 
 label {
 	display: block;
 	font-weight: bold;
 	margin: 1em 0 0 0;
-	width: 32em;
+	width: 20em;
 	max-width: 100%;
 }
 
@@ -52,6 +52,7 @@ label {
 input, textarea, button {
 	border-radius: 5px;
 	max-width: 100%;
+	width: 20em;
 }
 
 input, textarea {
@@ -61,13 +62,8 @@ input, textarea {
 	border: 2px inset #aaa;
 }
 
-input {
-	width: 20em;
-}
-
 textarea {
-	width: 40em;
-	height: 10em;
+	height: 5em;
 }
 
 button {
@@ -79,4 +75,27 @@ button {
 
 button:active {
 	border-style: inset;
+}
+
+/**********************************************************************/
+
+@media (min-width: 50em) {
+	label {
+		width: 32em;
+	}
+
+	input {
+		width: 20em;
+	}
+
+	textarea {
+		width: 40em;
+		height: 10em;
+	}
+
+	.main {
+		max-width: 50em;
+		margin: 1em auto;
+		padding: 1em;
+	}
 }
