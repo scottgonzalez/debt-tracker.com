@@ -1,0 +1,82 @@
+body {
+	background-image: linear-gradient(to right, #123, #132);
+	background-color: #444;
+	color: #eee;
+	font-family: Verdana, "BitStream vera Sans", Helvetica, sans-serif;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 1em 0;
+	line-height: 1.4em;
+}
+
+a, a:link, a:visited {
+	color: #159;
+	transition: color .5s;
+}
+
+a:hover, a:active {
+	color: #195;
+}
+
+h1 {
+	text-align: center;
+	text-shadow: rgba(0, 0, 0, 0.8) 2px 2px 2px;
+}
+
+.main {
+	border-radius: 20px;
+	background-image: linear-gradient(to bottom, #eee, #aaa);
+	background-color: #ccc;
+	color: #333;
+	margin: 2em;
+	padding: 1em 2em;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+	margin: 1em 0 0 0;
+	width: 32em;
+	max-width: 100%;
+}
+
+.field-description {
+	font-weight: normal;
+	font-size: 0.8em;
+}
+
+input, textarea, button {
+	border-radius: 5px;
+	max-width: 100%;
+}
+
+input, textarea {
+	font-size: 0.8em;
+	padding: .2em;
+	background-color: #eee;
+	border: 2px inset #aaa;
+}
+
+input {
+	width: 20em;
+}
+
+textarea {
+	width: 40em;
+	height: 10em;
+}
+
+button {
+	font-size: 1em;
+	padding: .2em 1em;
+	margin: 1em 0 0 0;
+	border: 2px outset #aaa;
+}
+
+button:active {
+	border-style: inset;
+}
