@@ -32,11 +32,11 @@
 <hr>
 
 <form action="https://docs.google.com/forms/d/1Tdy_Ms25wBVagX5uLWSc2_AdSWafC48an6zK4cmehCg/formResponse?embedded=true" method="POST">
-	<label for="full-name">Full Name</label>
-	<input name="entry.446487314" id="full-name">
+	<label for="full-name" class="required">Full Name</label>
+	<input name="entry.446487314" id="full-name" required>
 
-	<label for="email-address">Email Address</label>
-	<input name="entry.1274685118" id="email-address">
+	<label for="email-address" class="required">Email Address</label>
+	<input type="email" name="entry.1274685118" id="email-address" required>
 
 	<label for="mailing-address">Mailing Address</label>
 	<textarea name="entry.103763850" id="mailing-address"></textarea>
@@ -52,10 +52,10 @@
 	</label>
 	<textarea name="entry.381938536" id="corporate-contribution"></textarea>
 
-	<label for="confirmation">Confirmation
+	<label for="confirmation"><span class="required">Confirmation</span>
 	<div class="field-description">Please type "I AGREE" below to indicate you agree to these terms. Your full name and email address will be publicly available.</div>
 	</label>
-	<input name="entry.258735452" id="confirmation">
+	<input name="entry.258735452" id="confirmation" required pattern="I AGREE">
 
 	<div><button type="submit" name="submit">Submit Your CLA</button></div>
 </form>
